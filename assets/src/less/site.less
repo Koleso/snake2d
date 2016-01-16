@@ -1,0 +1,21 @@
+// Site.less
+// -----------------------------------------------------
+
+body {
+	background: @grayLight;
+	#font > #family > .sans-serif();
+	.font-size(@baseFontSize, @baseLineHeight);
+	.square(100%);
+	color: @textColor;
+	font-weight: 400;
+}
+
+.canvas {
+	background: @white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.translate(-50%, -50%);
+	border: 2px solid @black;
+	will-change: transform;
+}
